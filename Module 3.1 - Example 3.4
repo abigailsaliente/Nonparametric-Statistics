@@ -1,0 +1,16 @@
+install.packages("DescTools")
+library(DescTools)
+x <- c("M","M","F","F","F","F","M","M","M","M","M","M",
+       "F","F","F","F","F","M","M","M","M","M","M","M",
+       "F","F","F","M","M","M","M","F","M","M","F","M")
+RunsTest(x)
+
+
+Output
+
+  	Runs Test for Randomness
+
+data:  x
+z = -2.3556, runs = 11, m = 14, n = 22, p-value =
+0.01849
+alternative hypothesis: true number of runs is not equal the expected number
