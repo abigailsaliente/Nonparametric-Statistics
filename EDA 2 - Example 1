@@ -1,0 +1,20 @@
+Input:
+
+status <- c(replicate(30,"Single"), replicate(20, "Married"),
+            replicate(10,"Seperated"))
+f_status<- factor(status)
+f_status
+
+Output:
+
+[1] Single    Single    Single    Single    Single    Single   
+ [7] Single    Single    Single    Single    Single    Single   
+[13] Single    Single    Single    Single    Single    Single   
+[19] Single    Single    Single    Single    Single    Single   
+[25] Single    Single    Single    Single    Single    Single   
+[31] Married   Married   Married   Married   Married   Married  
+[37] Married   Married   Married   Married   Married   Married  
+[43] Married   Married   Married   Married   Married   Married  
+[49] Married   Married   Seperated Seperated Seperated Seperated
+[55] Seperated Seperated Seperated Seperated Seperated Seperated
+Levels: Married Seperated Single
