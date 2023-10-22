@@ -1,0 +1,40 @@
+status <- c(replicate(30,"Single"), replicate(20, "Married"),
+            replicate(10,"Seperated"))
+f_status<- factor(status)
+f_status
+
+
+tv<- c(replicate(50,"Most of the time"),replicate(15,"Sometimes"),
+       replicate(5,"Hardly Ever"))
+f_tv<- factor(tv, ordered = TRUE, levels = c("Hardly Ever",
+                                             "Sometimes",
+                                             "Most of the time"))
+f_tv
+
+
+
+[1] Most of the time Most of the time Most of the time
+ [4] Most of the time Most of the time Most of the time
+ [7] Most of the time Most of the time Most of the time
+[10] Most of the time Most of the time Most of the time
+[13] Most of the time Most of the time Most of the time
+[16] Most of the time Most of the time Most of the time
+[19] Most of the time Most of the time Most of the time
+[22] Most of the time Most of the time Most of the time
+[25] Most of the time Most of the time Most of the time
+[28] Most of the time Most of the time Most of the time
+[31] Most of the time Most of the time Most of the time
+[34] Most of the time Most of the time Most of the time
+[37] Most of the time Most of the time Most of the time
+[40] Most of the time Most of the time Most of the time
+[43] Most of the time Most of the time Most of the time
+[46] Most of the time Most of the time Most of the time
+[49] Most of the time Most of the time Sometimes       
+[52] Sometimes        Sometimes        Sometimes       
+[55] Sometimes        Sometimes        Sometimes       
+[58] Sometimes        Sometimes        Sometimes       
+[61] Sometimes        Sometimes        Sometimes       
+[64] Sometimes        Sometimes        Hardly Ever     
+[67] Hardly Ever      Hardly Ever      Hardly Ever     
+[70] Hardly Ever     
+Levels: Hardly Ever < Sometimes < Most of the time
