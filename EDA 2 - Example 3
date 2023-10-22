@@ -1,0 +1,51 @@
+Input:
+data<- c(10,15,20,8,22,8,10,9)
+my_matrix <- matrix(data, nrow= 4, ncol=2, byrow=F,
+                    dimnames = NULL)
+my_matrix
+
+Output:
+ [,1] [,2]
+[1,]   10   22
+[2,]   15    8
+[3,]   20   10
+[4,]    8    9
+
+Input:
+data<- c(10,15,20,8,22,8,10,9)
+my_matrix <- matrix(data, nrow= 4, ncol=2, byrow=F,
+                    dimnames = NULL)
+my_matrix1 <- matrix(data, nrow= 4, ncol=2, byrow=F,
+                   dimnames = list(c("High School","College",
+                                    "Masteral","PhD" ),c("Female",
+                                                         "Male")))
+my_matrix1
+
+Output:
+  Female Male
+High School     10   22
+College         15    8
+Masteral        20   10
+PhD              8    9
+
+
+
+Input:
+my_matrix2 <- matrix(data, nrow= 4, ncol=2, byrow=T,
+                     dimnames = list(c("High School","College",
+                                       "Masteral","PhD" ),c("Female",
+                                                            "Male")))
+my_matrix2
+
+
+Output:
+ Female Male
+High School     10   15
+College         20    8
+Masteral        22    8
+PhD             10    9
+
+
+
+
+
