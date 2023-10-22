@@ -1,0 +1,56 @@
+install.packages("readxl")
+library(readxl)
+apple = 15
+apple <- 15
+(apple <- 15)
+class(apple)
+a <- TRUE
+class(a)
+numeric_vector <-c(1,2,3,4,5)
+character_vector <- c("a","b","c")
+numeric_vector
+character_vector
+logical_vector <-c(T,F,T)
+logical_vector
+consec <-1:30
+seq1 <- seq(1,15, by= 0.5)
+seq1
+seq2 <- seq(1,10,length.out= 5)
+seq2
+seq3 <- c(1:10, seq(11, 15,by = 0.2), seq(16, 25, length.out= 5))
+seq3
+
+
+grades_statistics <-c(1.00,1.75,2.25)
+grades_math <- c(1.25, 1.75, 2.00)
+grades_english <- c(1.00, 2.00, 1.00)
+
+names_student <- c("Regine","Perlyn","Rhea")
+names(grades_statistics) <- names_student
+names(grades_math) <- names_student
+names(grades_english) <- names_student
+
+student1<-grades_statistics["Regine"]
+student1
+student1<-grades_statistics[1]
+
+
+names(grades_statistics) <-c("Regine","Perlyn","Rhea")
+grades_statistics
+
+
+student2<- grades_english[c("Perlyn", "Rhea")]
+student2
+
+
+
+seq4<- seq3[1:10]
+seq4
+seq5 <-seq3[c(1:10,20:25,30:34,36)]
+seq5
+
+
+
+
+
+
