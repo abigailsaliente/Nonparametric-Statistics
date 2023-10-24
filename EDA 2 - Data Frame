@@ -1,0 +1,19 @@
+#Create a data frame
+#To create a data frame we should first create a list of vector
+#Name of your friends
+name<- c("Katrina", "Elena","Macy","Camille","Ken")
+
+#Color of their shirt today
+color<- c("Blue","Red","Green","Blue","Yellow")
+
+#Height
+height<- c(175,178,167,169,172)
+
+#Favorite Food
+food<- c("Adobo","Sinigang na baboy","Pancit","Lumpia",
+         "Fried Chicken")
+
+Description<- data.frame(name,color,height,food)
+
+
+
