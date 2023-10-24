@@ -1,0 +1,16 @@
+a<- 1:30
+b<- seq(1,10, by=0.5)
+subj<- c("Math", "Science", "PE")
+f_subj<- factor(subj)
+my_list<- list(a,b,f_subj)
+my_list
+
+
+
+
+a<- 1:30
+b<- seq(1,10, by=0.5)
+subj<- c("Math", "Science", "PE")
+f_subj<- factor(subj, ordered = T, levels = c("Math","PE","Science"))
+my_list<- list(a,b,f_subj)
+my_list
