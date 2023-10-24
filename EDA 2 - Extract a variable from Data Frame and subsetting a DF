@@ -1,0 +1,9 @@
+cars
+cars$speed
+cars$dist
+
+subset(cars,speed<10)
+subset(cars,speed>15)
+subset(cars,speed==10)
+subset(cars,speed>15 & dist<30)
+
