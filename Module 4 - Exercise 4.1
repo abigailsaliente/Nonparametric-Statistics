@@ -5,16 +5,15 @@ before <- c(10500,8870,12300,10510,5570,9150,11980,6740,7340,13400,12200,
             10570,9880,12100,9000,11800,10500)
 after <- c(12600,10660,11890,14630,8580,10115,14350,6900,8890,16540,11300,
            13330,9990,14050,9500,12450,13450)
-signTest(before, after, mu=0, alternative = "greater",
-         conf.level = 0.05, paired= TRUE)
-
+signTest(before, after, mu=0, alternative = "less",
+         conf.level = 0.095, paired= TRUE)
 
 Results of Hypothesis Test
 --------------------------
 
 Null Hypothesis:                 median of differences = 0
 
-Alternative Hypothesis:          True median of differences is greater than 0
+Alternative Hypothesis:          True median of differences is less than 0
 
 Test Name:                       Paired Sign test
 
@@ -25,17 +24,17 @@ Data:                            x = before
 
 Test Statistic:                  # Diffs > median of differences = 2
 
-P-value:                         0.9998627
+P-value:                         0.001174927
 
 Confidence Interval for:         median of differences
 
 Confidence Interval Method:      interpolate (Nyblom, 1992)
 
-Confidence Interval Type:        lower
+Confidence Interval Type:        upper
 
-Confidence Level:                5%
+Confidence Level:                9.5%
 
-Confidence Limit Rank(s):        12 13 NA NA 
+Confidence Limit Rank(s):        NA NA 7 6 
 
-Confidence Interval:             LCL = -610.6699
-                                 UCL =       Inf
+Confidence Interval:             LCL =      -Inf
+                                 UCL = -2268.799
