@@ -1,14 +1,15 @@
 #dependent 2-group Wilcoxon Signed Rank Test
 #Create a vector
-city1 <-c(125,132,138,120,125,127,136,139,131,132)
-city2 <-c(118,134,130,124,105,130,130,132,123,128)
+before <-c(125,132,138,120,125,127,136,139,131,132)
+after <-c(118,134,130,124,105,130,130,132,123,128)
 
-wilcox.test(city1,city2, paired=TRUE,
+wilcox.test(before,after, paired=TRUE,
             alternative= "two.sided", exact= FALSE)
+
 
 
 Wilcoxon signed rank test with continuity correction
 
-data:  city1 and city2
+data:  before and after
 V = 48.5, p-value = 0.03629
 alternative hypothesis: true location shift is not equal to 0
