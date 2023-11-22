@@ -1,0 +1,39 @@
+#paired sample sign test
+library(EnvStats)
+before <- c(21,34,9,45,30,54,37,36,33,40)
+after <- c(19,22,16,31,21,30,22,18,17,21)
+signTest(before, after, mu=0, alternative = "greater",
+         conf.level = 0.975, paired= TRUE)
+
+
+
+Results of Hypothesis Test
+--------------------------
+
+Null Hypothesis:                 median of differences = 0
+
+Alternative Hypothesis:          True median of differences is greater than 0
+
+Test Name:                       Paired Sign test
+
+Estimated Parameter(s):          median of differences = 14.5
+
+Data:                            x = before
+                                 y = after 
+
+Test Statistic:                  # Diffs > median of differences = 9
+
+P-value:                         0.01074219
+
+Confidence Interval for:         median of differences
+
+Confidence Interval Method:      interpolate (Nyblom, 1992)
+
+Confidence Interval Type:        lower
+
+Confidence Level:                97.5%
+
+Confidence Limit Rank(s):        2 3 NA NA 
+
+Confidence Interval:             LCL = 6.603604
+                                 UCL =      Inf
