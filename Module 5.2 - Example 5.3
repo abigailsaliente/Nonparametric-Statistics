@@ -1,0 +1,18 @@
+#Example 5.3
+data<- c (9,4,2,8)
+cont_table <- matrix(data, nrow=2, ncol=2, byrow= F,
+                     dimnames = NULL)
+fisher.test(cont_table, alternative= "two.sided",
+            conf.level = 0.95)
+
+
+Fisher's Exact Test for Count Data
+
+data:  cont_table
+p-value = 0.03607
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+   0.9868616 112.5557919
+sample estimates:
+odds ratio 
+  8.042442 
