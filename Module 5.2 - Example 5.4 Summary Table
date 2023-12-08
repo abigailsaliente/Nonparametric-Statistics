@@ -1,0 +1,13 @@
+#Median Test
+#If summary table is given
+#create a matrix based on the summary table
+mymatrix <-matrix(c(7,4,5,6), nrow = 2, ncol =2, byrow= T)
+
+#Compute the median test using the function of chi-square test
+chisq.test(mymatrix, correct =T)
+
+
+      Pearson's Chi-squared test with Yates' continuity correction
+
+data:  mymatrix
+X-squared = 0.18333, df = 1, p-value = 0.6685
