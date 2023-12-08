@@ -1,0 +1,20 @@
+#Mann Whitney U-Test
+#Create a vector
+compensation <- c(20.10, 19.80, 22.36, 18.75, 21.90, 22.96,
+                  20.75, 26.19, 23.88, 25.50, 21.64, 24.85,
+                  25.30, 24.12, 23.45)
+
+groups <- c(replicate(7, "Health Service"),
+            replicate(8, "Educational"))
+
+#Create a data frame
+data <- data.frame(groups,compensation)
+wilcox.test(compensation ~ groups, mu=0, alternative= "two.sided",
+            paired=F, data=data, exact=F)
+
+
+      Wilcoxon rank sum test with continuity correction
+
+data:  compensation by groups
+W = 53, p-value = 0.004578
+alternative hypothesis: true location shift is not equal to 0
