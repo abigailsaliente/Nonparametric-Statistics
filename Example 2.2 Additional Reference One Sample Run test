@@ -1,0 +1,13 @@
+#one sample run test
+library(DescTools)
+x <- c("N","N","N","S","S","N","N","S","N","S","N","N","N","N","N",
+       "S","N","S","N","S","N","N","S","N","S","S","N","N","N","N")
+RunsTest(x)
+
+
+
+          Runs Test for Randomness
+
+data:  x
+runs = 17, m = 20, n = 10, p-value = 0.3103
+alternative hypothesis: true number of runs is not equal the expected number
