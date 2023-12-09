@@ -1,0 +1,19 @@
+#one sample sign test
+library(signmedian.test)
+x <-c(118,167,72,79,76,106,102,113,
+      73,119,162,114,120,93,135,147,
+      77,157,115,88,152,70,65,91)
+signmedian.test(x,mu=120, alternative = "greater",
+                conf.level= 0.025)
+
+
+        Exact sign test
+
+data:  x
+#(x>120) = 6, mu = 120, p-value = 0.9947
+alternative hypothesis: the median of x is greater than mu
+4.440892e-14 percent confidence interval:
+ 106 113
+sample estimates:
+point estimator 
+          109.5 
