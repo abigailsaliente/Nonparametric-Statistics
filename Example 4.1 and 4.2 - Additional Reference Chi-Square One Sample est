@@ -1,0 +1,28 @@
+#Example 4.1
+#Chi-square One Sample Test
+#create a vector
+
+observed <- c(71, 40, 101, 35, 53)
+proportions <-c(0.25, 0.20, 0.35, 0.05, 0.15)
+chisq.test(observed, p=proportions)
+
+
+      Chi-squared test for given probabilities
+
+data:  observed
+X-squared = 35.121, df = 4, p-value = 4.386e-07
+
+
+
+#Example 4.2
+#Chi-square One Sample Test
+#create a vector
+
+observed <- c(76, 84, 30, 60, 54, 50, 42, 14)
+proportions <-c(0.16, 0.20, 0.08, 0.14, 0.15, 0.12, 0.10, 0.05)
+chisq.test(observed, p=proportions)
+
+        Chi-squared test for given probabilities
+
+data:  observed
+X-squared = 5.0674, df = 7, p-value = 0.6517
