@@ -1,0 +1,14 @@
+
+#Example 6.1
+#create a vector
+OD <-c(89, 84, 96, 74, 91, 85, 95, 82, 92, 81)
+ND <-c(83, 83, 92, 76, 91, 80, 87, 85, 90, 77)
+
+wilcox.test(OD, ND, paired=T,
+            alternative = "greater", exact = F)
+
+    Wilcoxon signed rank test with continuity correction
+
+data:  OD and ND
+V = 38.5, p-value = 0.03292
+alternative hypothesis: true location shift is greater than 0
