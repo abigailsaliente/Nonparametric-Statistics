@@ -1,10 +1,12 @@
 #one sample sign test
 library(signmedian.test)
-x <-c(118,167,72,79,76,106,102,113,
-      73,119,162,114,120,93,135,147,
-      77,157,115,88,152,70,65,91)
-signmedian.test(x,mu=120, alternative = "greater",
-                conf.level= 0.025)
+x <-c(100, 200, 301, 99, 55, 199, 501, 299,
+      500, 450, 15, 80)
+signmedian.test(x,mu=300, alternative = "greater",
+                conf.level= 0.001)
+
+
+
 
 
       Exact sign test
